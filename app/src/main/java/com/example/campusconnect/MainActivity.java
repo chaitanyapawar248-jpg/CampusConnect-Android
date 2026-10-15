@@ -63,8 +63,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        btnNotes.setOnClickListener(v ->
-                showMessage("Notes and Study Resources"));
+        btnNotes.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    NotesActivity.class
+            );
+            startActivity(intent);
+        });
 
         btnAnnouncements.setOnClickListener(v ->
                 showMessage("College Announcements"));
