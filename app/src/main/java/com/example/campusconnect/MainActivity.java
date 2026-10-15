@@ -71,8 +71,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        btnAnnouncements.setOnClickListener(v ->
-                showMessage("College Announcements"));
+        btnAnnouncements.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    AnnouncementsActivity.class
+            );
+            startActivity(intent);
+        });
     }
 
     private void showMessage(String feature) {
