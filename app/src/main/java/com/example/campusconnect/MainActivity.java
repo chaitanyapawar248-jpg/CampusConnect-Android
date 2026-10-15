@@ -55,8 +55,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        btnEvents.setOnClickListener(v ->
-                showMessage("Campus Events"));
+        btnEvents.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    EventsActivity.class
+            );
+            startActivity(intent);
+        });
 
         btnNotes.setOnClickListener(v ->
                 showMessage("Notes and Study Resources"));
