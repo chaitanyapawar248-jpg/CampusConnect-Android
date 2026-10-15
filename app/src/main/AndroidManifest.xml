@@ -24,6 +24,10 @@
         <activity
             android:name=".TimetableActivity"
             android:exported="false" />
+        <activity
+            android:name=".AttendanceActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

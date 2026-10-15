@@ -1,6 +1,7 @@
 
 package com.example.campusconnect;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
@@ -46,8 +47,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        btnAttendance.setOnClickListener(v ->
-                showMessage("Attendance Tracker"));
+        btnAttendance.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    AttendanceActivity.class
+            );
+            startActivity(intent);
+        });
 
         btnEvents.setOnClickListener(v ->
                 showMessage("Campus Events"));
