@@ -78,6 +78,15 @@ public class MainActivity extends AppCompatActivity {
             );
             startActivity(intent);
         });
+        Button btnProfile = findViewById(R.id.btnProfile);
+
+        btnProfile.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    ProfileActivity.class
+            );
+            startActivity(intent);
+        });
     }
 
     private void showMessage(String feature) {
