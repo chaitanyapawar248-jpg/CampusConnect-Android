@@ -1,8 +1,10 @@
+
 package com.example.campusconnect;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -13,12 +15,53 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        ViewCompat.setOnApplyWindowInsetsListener(
+                findViewById(R.id.main), (v, insets) -> {
+                    Insets systemBars = insets.getInsets(
+                            WindowInsetsCompat.Type.systemBars());
+                    v.setPadding(
+                            systemBars.left,
+                            systemBars.top,
+                            systemBars.right,
+                            systemBars.bottom);
+                    return insets;
+                });
+
+        Button btnTimetable = findViewById(R.id.btnTimetable);
+        Button btnAttendance = findViewById(R.id.btnAttendance);
+        Button btnEvents = findViewById(R.id.btnEvents);
+        Button btnNotes = findViewById(R.id.btnNotes);
+        Button btnAnnouncements = findViewById(R.id.btnAnnouncements);
+
+
+        btnTimetable.setOnClickListener(v -> {
+            android.content.Intent intent =
+                    new android.content.Intent(
+                            MainActivity.this,
+                            TimetableActivity.class
+                    );
+            startActivity(intent);
         });
+
+
+        btnAttendance.setOnClickListener(v ->
+                showMessage("Attendance Tracker"));
+
+        btnEvents.setOnClickListener(v ->
+                showMessage("Campus Events"));
+
+        btnNotes.setOnClickListener(v ->
+                showMessage("Notes and Study Resources"));
+
+        btnAnnouncements.setOnClickListener(v ->
+                showMessage("College Announcements"));
+    }
+
+    private void showMessage(String feature) {
+        Toast.makeText(this,
+                feature + " - Coming Soon!",
+                Toast.LENGTH_SHORT).show();
     }
 }

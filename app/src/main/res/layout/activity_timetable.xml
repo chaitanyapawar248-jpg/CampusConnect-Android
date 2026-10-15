@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class Timetable"
+            android:textColor="#173B73"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Your weekly class schedule"
+            android:textColor="#667085"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#173B73"
+            android:padding="14dp"
+            android:text="MONDAY"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:text="9:00 - 10:00 AM   |   Mathematics\n10:00 - 11:00 AM |   Computer Networks\n11:15 - 12:15 PM |   Database Management\n1:00 - 2:00 PM    |   Project Work"
+            android:textColor="#202939"
+            android:textSize="15sp"
+            android:lineSpacingExtra="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#173B73"
+            android:padding="14dp"
+            android:text="TUESDAY"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:text="9:00 - 10:00 AM   |   Software Engineering\n10:00 - 11:00 AM |   Mathematics\n11:15 - 12:15 PM |   Computer Networks\n1:00 - 2:00 PM    |   Lab Session"
+            android:textColor="#202939"
+            android:textSize="15sp"
+            android:lineSpacingExtra="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#173B73"
+            android:padding="14dp"
+            android:text="WEDNESDAY"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:text="9:00 - 10:00 AM   |   Database Management\n10:00 - 11:00 AM |   Software Engineering\n11:15 - 12:15 PM |   Project Work\n1:00 - 2:00 PM    |   Tutorial"
+            android:textColor="#202939"
+            android:textSize="15sp"
+            android:lineSpacingExtra="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#173B73"
+            android:padding="14dp"
+            android:text="THURSDAY"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:text="9:00 - 10:00 AM   |   Computer Networks\n10:00 - 11:00 AM |   Database Management\n11:15 - 12:15 PM |   Mathematics\n1:00 - 2:00 PM    |   Lab Session"
+            android:textColor="#202939"
+            android:textSize="15sp"
+            android:lineSpacingExtra="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#173B73"
+            android:padding="14dp"
+            android:text="FRIDAY"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:text="9:00 - 10:00 AM   |   Software Engineering\n10:00 - 11:00 AM |   Project Work\n11:15 - 12:15 PM |   Tutorial\n1:00 - 2:00 PM    |   Lab Session"
+            android:textColor="#202939"
+            android:textSize="15sp"
+            android:lineSpacingExtra="8dp" />
+
+    </LinearLayout>
+</ScrollView>
